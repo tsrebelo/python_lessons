@@ -18,3 +18,12 @@ def repetirVezes(vezes):
     return
 
 repetirVezes(5)
+
+print("---------------")
+
+# Funções de retorno
+
+def somar(a, b):
+    return a + b
+resultado = somar(5, 3)
+print("Resultado:", resultado)
