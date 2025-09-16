@@ -1,4 +1,4 @@
-idade = 17
+idade = input("Qual é a tua idade? ")
 
 if idade < 18:
     print("Menor de idade")
