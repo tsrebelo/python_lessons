@@ -1,6 +1,6 @@
 import os
 
-os.system('cls' if os.name == 'nt' else 'clear')
+os.system('clear')
 
 idade = int(input("Qual é a tua idade? "))
 
