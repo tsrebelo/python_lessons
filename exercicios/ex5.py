@@ -1,6 +1,5 @@
 # Método recursivo
 
-
 def fibonacci_recursivo(n):
     if n <= 0:
         return 0
