@@ -1,8 +1,8 @@
 #
 # uma aplicação em python que consulte um api público e mostre os dados
 #
-# https://api.ipma.pt/open-data/observation/seismic/{idArea}.json 
-# https://api.ipma.pt/open-data/sea-locations.json
+# Sismos - https://api.ipma.pt/open-data/observation/seismic/{idArea}.json 
+# Localização - https://api.ipma.pt/open-data/sea-locations.json
 #
 
 import requests
