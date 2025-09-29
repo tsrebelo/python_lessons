@@ -13,4 +13,4 @@ matriz = [
 ]
 
 for x in matriz:
-    print(x)
+    print({x})
