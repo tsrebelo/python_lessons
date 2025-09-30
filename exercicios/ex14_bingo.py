@@ -31,5 +31,5 @@ def main():
 
     print("Todos os números foram sorteados! Fim do jogo.")
     
-    if __name__ == "__main__":      
-        main()
+if __name__ == "__main__":      
+    main()
