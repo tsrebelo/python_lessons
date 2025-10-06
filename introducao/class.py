@@ -3,6 +3,7 @@ import os
 os.system("clear")
 
 class Person:
+    
     abc = 10
     
     def __init__(self, fname, lname):
