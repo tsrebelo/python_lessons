@@ -3,6 +3,8 @@ import os
 os.system("clear")
 
 class Person:
+    abc = 10
+    
     def __init__(self, fname, lname):
         self.firstname = fname
         self.lastname = lname
@@ -11,14 +13,16 @@ class Person:
         print(self.firstname, self.lastname)
         
 class Student(Person):
-    def __init__(self, fname, lname):
-        Person.__init__(self, fname, lname)
+    def __init__(self, fname, lname, password):
+        super().__init__(self, fname, lname)
+        self.password = password
+        self.graduationyear = 2019
 
 p1 = Person("John", "Olsen")
 print("Class Pessoa:")
 print(p1.firstname, p1.lastname)
 
-s1 = Student("Mike", "Olsen")
+s1 = Student("Mike", "Olsen", "12345678")
 print("\nClass Student:")
 s1.printname()
 
