@@ -10,17 +10,19 @@ print(p1.age)
 
 
 class Carro:
+    
+    velocidadeMax = 240
+    velocidadeAtual = 0
+    
     def __init__(self, marca, modelo):
         self.marca = marca
         self.modelo = modelo
-        print("O Construtor foi inicializado")
-        
-    def mostraMarca(self):
-        print(self.marca)
-        
-    def mostraModelo(self):
-        print(self.modelo)
+    
+    def acelerar(self, velocidade):
+        self.velocidadeAtual += velocidade
+        if self.velocidadeAtual > self.velocidadeMax:
+            self.velocidadeAtual = self.velocidadeMax
+        return self.velocidadeAtual
         
 c1 = Carro("BMW", "X3")
-c1.mostraMarca()
-c1.mostraModelo()
+print(c1.acelerar(250))
