@@ -1,55 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Studio S — Contacto</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos — Trace & Moment Studio | Ink & Lens Studio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">S</div>
-        <div>
-          <h1>Studio S</h1>
-          <p>Fale connosco</p>
-        </div>
-      </div>
+  <header>
+    <nav>
+      <h1>Trace & Moment Studio | Ink & Lens Studio — Contactos</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="recursos.html">Serviços</a></li>
+        <li><a href="contacto.html" class="active">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="recursos.html">Recursos</a>
-        <a href="contacto.html" class="active">Contacto</a>
-      </nav>
-    </header>
+  <section class="content">
+    <h2>Contacta-nos</h2>
+    <p>Marca a tua sessão fotográfica ou piercing com a nossa equipa.</p>
 
-    <main class="grid single">
-      <section>
-        <div class="card hero">
-          <h2>Entre em contacto</h2>
-          <p>Adoraríamos ouvir-te! Preenche o formulário abaixo e responderemos o mais rápido possível.</p>
-        </div>
+    <form class="contact-form">
+      <input type="text" placeholder="O seu nome" required>
+      <input type="email" placeholder="O seu e-mail" required>
+      <textarea placeholder="A sua mensagem" rows="5" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
 
-        <div class="card contact">
-          <form onsubmit="event.preventDefault();alert('Mensagem enviada com sucesso!');this.reset();">
-            <input type="text" placeholder="Nome" required />
-            <input type="email" placeholder="Email" required />
-            <textarea rows="5" placeholder="Mensagem"></textarea>
-            <button class="btn btn-primary" type="submit">Enviar</button>
-          </form>
-        </div>
-      </section>
-    </main>
+    <div class="contact-info">
+      <p><strong>Email:</strong> info@traceandmoment.com</p>
+      <p><strong>Localização:</strong> Rua da Arte 45, Lisboa</p>
+      <p><strong>Instagram:</strong> @traceandmoment</p>
+    </div>
+  </section>
 
-    <footer>
-      <div>© <span id="year"></span> Studio S</div>
-      <div class="small">Feito com ♥ em HTML & CSS</div>
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <footer>
+    <p>© 2025 Trace & Moment Studio | Ink & Lens Studio — Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
