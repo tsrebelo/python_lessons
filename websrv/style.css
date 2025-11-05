@@ -1,0 +1,206 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #0b0b0b;
+  --purple: #6a00ff;
+  --pink: #ff4da6;
+  --cyan: #00ffd6;
+  --muted: #bdbdbd;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 14px;
+  --maxw: 1100px;
+  --gap: 18px;
+  --ff: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--ff);
+  background: linear-gradient(180deg, var(--bg) 0%, #070707 100%);
+  color: #fff;
+  line-height: 1.45;
+  padding: 32px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+  margin-bottom: 22px;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg,var(--purple),var(--pink) 55%, var(--cyan));
+  display: inline-grid;
+  place-items: center;
+  font-weight: 700;
+  color: #070707;
+}
+.brand h1 { font-size: 18px; margin: 0; }
+.brand p { margin: 0; font-size: 12px; color: var(--muted); }
+
+nav { display: flex; gap: 12px; align-items: center; }
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+nav a.cta {
+  background: linear-gradient(90deg,var(--pink),var(--cyan));
+  color: #070707;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+nav a:hover { filter: brightness(1.1); }
+nav a.active {
+  color: var(--cyan);
+  text-shadow: 0 0 8px var(--cyan);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 26px;
+  align-items: start;
+}
+@media (max-width:880px) {
+  .grid { grid-template-columns: 1fr; }
+  .brand p { display: none; }
+}
+
+.card {
+  background: var(--glass);
+  padding: 22px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.hero {
+  padding: 28px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg, rgba(106,0,255,0.08), rgba(255,77,166,0.04));
+}
+.hero h2 { margin: 0 0 10px 0; font-size: 28px; }
+.hero p { margin: 0 0 18px; color: var(--muted); }
+.hero .actions { display: flex; gap: 12px; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+}
+.btn-primary {
+  background: linear-gradient(90deg,var(--purple),var(--pink));
+  color: #070707;
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: var(--muted);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+.feature {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  padding: 12px;
+  border-radius: 10px;
+}
+.feature h3 { margin: 0 0 6px 0; font-size: 15px; }
+.feature p { margin: 0; font-size: 13px; color: var(--muted); }
+
+.aside {
+  position: sticky;
+  top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input[type=text],
+input[type=email],
+textarea {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+input::placeholder,
+textarea::placeholder { color: #9b9b9b; }
+
+.small { font-size: 13px; color: var(--muted); }
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.stripe {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 220px;
+  height: 220px;
+  background: conic-gradient(from 180deg at 50% 50%, rgba(106,0,255,0.06), rgba(0,255,214,0.06));
+  transform: rotate(18deg);
+  filter: blur(30px);
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+@media (max-width:480px) {
+  .logo { width: 48px; height: 48px; }
+  .hero h2 { font-size: 20px; }
+  .grid { gap: 18px; }
+}

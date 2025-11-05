@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Studio S — Início</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>Studio S</h1>
+          <p>Design em roxo • rosa • ciano</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html" class="active">Início</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="cta" href="contacto.html">Começar</a>
+      </nav>
+    </header>
+
+    <main class="grid single">
+      <section>
+        <div class="card hero">
+          <div class="stripe" aria-hidden="true"></div>
+          <h2>Crie experiências visuais incríveis</h2>
+          <p>Designs modernos e elegantes, feitos com atenção ao detalhe e equilíbrio de cor — preto, roxo, rosa e ciano.</p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="contacto.html">Contacte-nos</a>
+            <a class="btn btn-outline" href="recursos.html">Ver recursos</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Studio S</div>
+      <div class="small">Feito com ♥ em HTML & CSS</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

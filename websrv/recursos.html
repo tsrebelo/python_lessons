@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Studio S — Recursos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">S</div>
+        <div>
+          <h1>Studio S</h1>
+          <p>Recursos e ferramentas criativas</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="recursos.html" class="active">Recursos</a>
+        <a href="contacto.html">Contacto</a>
+        <a class="cta" href="contacto.html">Começar</a>
+      </nav>
+    </header>
+
+    <main class="grid single">
+      <section>
+        <div class="card hero">
+          <h2>Os nossos recursos favoritos</h2>
+          <p>Ferramentas e guias que usamos e recomendamos para melhorar a tua presença online e design visual.</p>
+        </div>
+
+        <div class="card">
+          <h3>💡 Design & Inspiração</h3>
+          <ul>
+            <li><strong>Figma:</strong> ferramenta poderosa para protótipos e UI.</li>
+            <li><strong>Dribbble:</strong> comunidade para inspiração visual.</li>
+            <li><strong>Coolors:</strong> gerador rápido de paletas de cor.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>⚙️ Desenvolvimento Web</h3>
+          <ul>
+            <li><strong>Visual Studio Code:</strong> o editor que usamos diariamente.</li>
+            <li><strong>Netlify:</strong> hospedagem simples e gratuita para sites estáticos.</li>
+            <li><strong>GitHub:</strong> colaboração e versionamento de código.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>📘 Guias & Aprendizagem</h3>
+          <ul>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web" target="_blank">MDN Web Docs</a> — documentação completa de HTML, CSS e JS.</li>
+            <li><a href="https://freecodecamp.org" target="_blank">FreeCodeCamp</a> — prática com projetos reais.</li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a> — truques e dicas para layouts e efeitos.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Studio S</div>
+      <div class="small">Feito com ♥ em HTML & CSS</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
