@@ -11,6 +11,5 @@ if __name__ == "__main__":
 
 
 # "https://www.traceandmoment.com" - Trace & Moment
-# "https://www.inkandlens.com" - Ink & Lens Studio
 
-# Trace & Moment Studio | Ink & Lens Studio — Início
+# Trace & Moment Studio — Início

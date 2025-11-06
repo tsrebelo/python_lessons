@@ -3,6 +3,7 @@
   --roxo: #a86fff;
   --rosa: #ff66b2;
   --ciano: #4ef0e0;
+  --azul: #031681;
 }
 
 body {
@@ -25,7 +26,7 @@ nav {
 
 nav h1 {
   font-size: 1.5rem;
-  color: var(--ciano);
+  color: var(--azul);
   margin: 0;
 }
 
