@@ -40,7 +40,7 @@ def colocarMaiusculas(funcao):
     return wrapper
 
 @colocarMaiusculas
-def ola():
-    return "olá mundo"
+def hello():
+    return "hello world"
 
-print(ola())
+print(hello())
